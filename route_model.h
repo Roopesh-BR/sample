@@ -40,7 +40,7 @@ class RouteModel : public Model{
     std::vector<Node> path;
 
     private:
-    std::vector<std::byte> m_Nodes;
+    std::vector<Node> m_Nodes;
     std::unordered_map <int, std::vector<const Model::Road*>> node_to_road;
 
     void CreateNodeToRoadHashmap();
